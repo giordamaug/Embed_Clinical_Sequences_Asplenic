@@ -1,4 +1,6 @@
 numpy
+ipywidgets
+IPython
 pandas
 matplotlib
 seaborn
@@ -9,3 +11,4 @@ torchvision
 torchaudio
 terminado
 lightgbm
+tqdm
