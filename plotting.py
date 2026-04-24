@@ -14,7 +14,7 @@ def plot_group_distribution_with_event_boxplot(df, groupby="primary_disease_area
 
     if label_desc is not None:
         mapping = {float(i): label for i, label in enumerate(label_desc)}
-        label_order = [label_desc[i] for i in df[groupby].dropna().unique().tolist()]
+        label_order = [label_desc[int(i)] for i in df[groupby].dropna().unique().tolist()]
         df[groupby] = df[groupby].astype(float).map(mapping)
     else:
         label_order = df[groupby].dropna().unique().tolist()
